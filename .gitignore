@@ -9,4 +9,8 @@ bower.json
 gulpfile.js
 MIT.LICENSE
 package.json
+<<<<<<< HEAD
 SpecRunner.html
+=======
+SpecRunner.html
+>>>>>>> master
