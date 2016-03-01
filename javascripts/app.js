@@ -55,5 +55,11 @@ $(document).ready(function() {
     $(".card").hide();
     $("." + previousCard).show();
   });
+  // Adding event listener to defeat your enemies button
+  $(".defeat_btn").click(function(e) {
+    var nextCard = $(this).attr("next");
+    $(".card").hide();
+    $("." + nextCard).show();
+  });
 
 });
