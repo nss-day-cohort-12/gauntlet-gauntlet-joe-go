@@ -1,0 +1,18 @@
+{
+  "name": "gauntlet-gauntlet-joe-go",
+  "description": "Time to use protypal inheritance to build a game.",
+  "main": "index.js",
+  "authors": [
+    "Jeremy C. Swain <jeremycswain@icloud.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nss-day-cohort-12/gauntlet-gauntlet-joe-go",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

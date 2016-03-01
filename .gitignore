@@ -1,12 +1,1 @@
 .DS_Store
-bower_components
-lib
-node_modules
-spec
-src
-.jshintrc
-bower.json
-gulpfile.js
-MIT.LICENSE
-package.json
-SpecRunner.html
