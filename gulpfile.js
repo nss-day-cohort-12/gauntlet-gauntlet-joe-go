@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var watch = require('gulp-watch');
 
-gulp.task('default', ['lint', 'watch']);
+gulp.task('default', ['watch', 'lint']);
 
 gulp.task('watch', function() {
   gulp.watch('./javascripts/**/*.js', ['lint']);
@@ -10,14 +10,13 @@ gulp.task('watch', function() {
 
 
 gulp.task('lint', function() {
-  return gulp.src('./scripts/**/*.js')
+  return gulp.src('./javascripts/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
 var watchify = require('watchify');
 var browserify = require('browserify');
-var gulp = require('gulp');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
@@ -35,7 +34,7 @@ var b = watchify(browserify(opts));
 // add transformations here
 // i.e. b.transform(coffeeify);
 
-gulp.task('default', bundle); // so you can run `gulp js` to build the file
+// gulp.task('default', bundle); // so you can run `gulp js` to build the file
 b.on('update', bundle); // on any dep update, runs the bundler
 b.on('log', gutil.log); // output build logs to terminal
 
