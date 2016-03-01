@@ -122,5 +122,6 @@ Gauntlet.GuildHall.Sorcerer.prototype = new Gauntlet.GuildHall.Mage();
       - Thief
       - Ninja
       - Assassin
+      - 
  */
 
