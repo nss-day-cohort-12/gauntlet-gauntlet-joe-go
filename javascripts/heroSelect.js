@@ -66,8 +66,5 @@ $("section#weapon-select").click(function(){
 	addWeapon(event.target.closest(".card__button"), theHero);
 });
 
-$("div#test").click(function(){
-	console.log("the hero", theHero);
-})
 
 
