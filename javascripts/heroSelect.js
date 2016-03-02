@@ -9,11 +9,11 @@ let theHero = new Gauntlet.Combatants.Human();
 // this new object will be the user character
 
 	$("a#select-class").click(function() {
-		theHero = buildHero();
+		theHero = nameHero();
 	});
 
 // capture the Player's name
-	function buildHero() {
+	function nameHero() {
 		theHero.playerName = $("input#player-name").val();
 		console.log("name", theHero);
 		return theHero;
@@ -59,5 +59,19 @@ let theHero = new Gauntlet.Combatants.Human();
 
 		console.log("test", theHero);
 	};
+
+
+	// weapon select
+
+
+	$("section#weapon-select").click(function(){
+		addWeapon(event.target.closest(".card__button"), theHero);
+	});
+
+	$("div#test").click(function(){
+		console.log("the hero", theHero);
+	})
+
+
 
 });
