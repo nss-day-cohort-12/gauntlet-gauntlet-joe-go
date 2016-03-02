@@ -147,7 +147,51 @@
         </a>
       </div>
     </section>
-
+  <section id="spell-select" class="card card--spell">
+      <div class="card__prompt">
+        <div>choose your Spell</div>
+        <div>
+          <a class="card__back btn btn--small" 
+             href="#"
+             previous="card--class">
+            <span class="btn__prompt">&lt;</span>
+            <span class="btn__text">Back</span>
+          </a>          
+        </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Sphere</span>
+              </a>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Agi</span>
+              </a>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Thundera</span>
+              </a>
+            </div>
+      </div>
+      <div class="card__button">
+        <a class="card__link btn btn--big btn--orange" 
+           href="#" 
+           next="card--battleground">
+          <span class="btn__prompt">></span>
+          <span class="btn__text">defeat your enemies</span>
+        </a>
+      </div>
+    </section>
     <section id="weapon-select" class="card card--weapon">
       <div class="card__prompt">
         <div>choose your weapon</div>
@@ -160,19 +204,59 @@
           </a>          
         </div>
       </div>
-
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">Dagger</span>
+              </a>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">BroadSword</span>
+              </a>
+            </div>
+      </div>
+      <div class="col-sm-4">
+            <div class="card__button">
+              <a class="class__link btn btn--big btn--blue" href="#">
+                <span class="btn__prompt">></span>
+                <span class="btn__text">WarAxe</span>
+              </a>
+            </div>
+      </div>
       <div class="card__button">
         <a class="card__link btn btn--big btn--orange" 
            href="#" 
            next="card--battleground">
           <span class="btn__prompt">></span>
-          <span class="btn__text">defeat your enemies</span>
+          <span class="btn__text defeat_btn">defeat your enemies</span>
         </a>
       </div>
     </section>
 
-    <section id="battleground" class="card card--battleground"></section>
-
+    <section id="battleground" class="card card--battleground">
+      <div class = "col-sm-4">
+        <h3>Player</h3>
+        <h2>Stats</h2>
+        <p>Health:</p>
+        <p>Strength:</p>
+        <p>Intelligence:</p>
+      </div>
+      <div>
+        <button class="col-sm-1">ATTACK!</button>
+      </div>
+      <div class = "col-sm-4">
+        <h3>Enemy</h3>
+        <h2>Stats</h2>
+        <p>Health:</p>
+        <p>Strength:</p>
+        <p>Intelligence:</p>
+      </div>
+    </section>
   </article>
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
