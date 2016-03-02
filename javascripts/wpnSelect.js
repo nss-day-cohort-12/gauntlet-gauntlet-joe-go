@@ -12,6 +12,15 @@
 			case "waraxe":
 				theHero.weapon = new WarAxe();
 				break;
+			case "fireball":
+				theHero.weapon = new Fireball();
+				break;
+			case "lightningbolt":
+				theHero.weapon = new LightningBolt();
+				break;
+			case "acidsplash":
+				theHero.weapon = new AcidSplash();
+				break;
 			default:
 				break;						
 		};

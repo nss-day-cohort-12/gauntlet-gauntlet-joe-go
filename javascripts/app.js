@@ -1,6 +1,10 @@
+"use strict";
+
 /*
-  Test code to generate a human player and an orc player
- */
+  Test code to generate a human player and an orc 
+*/
+
+let theNewHero = {};
 var warrior = new Gauntlet.Combatants.Human();
 warrior.setWeapon(new WarAxe());
 warrior.generateClass();  // This will be used for "Surprise me" option
@@ -10,13 +14,6 @@ var orc = new Gauntlet.Combatants.Orc();
 orc.generateClass();
 orc.setWeapon(new BroadSword());
 console.log(orc.toString());
-
-/*
-  Test code to generate a spell
- */
-var spell = new Gauntlet.SpellBook.Sphere();
-console.log("spell: ", spell.toString());
-
 
 $(document).ready(function() {
   /*
@@ -61,5 +58,31 @@ $(document).ready(function() {
     $(".card").hide();
     $("." + nextCard).show();
   });
-
+// When the 'weapon select' button is clicked, show weapons if user is NOT magical, and show Spells if theHero IS magical.
+  $('.selectWpnBtn').click(function () {
+    if (theHero.class.magical === true) {
+      console.log("yes");
+    }
+  });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
