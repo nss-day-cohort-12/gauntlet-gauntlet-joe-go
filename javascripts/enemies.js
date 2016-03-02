@@ -3,7 +3,7 @@ Gauntlet.Combatants.Orc = function() {
   this.species = "Orc";
   this.allowedClasses = ["Warrior", "Berserker", "Shaman"];
 
-  this.generateClass = function() {
+  this.generateClass = function() {   
     // Get a random index from the allowed classes array
     var random = Math.round(Math.random() * (this.allowedClasses.length - 1));
 
@@ -12,6 +12,7 @@ Gauntlet.Combatants.Orc = function() {
 
     // Composes the corresponding player class into the player object
     this.class = new Gauntlet.GuildHall[randomClass]();
+    console.log("this class", this.class);
     return this.class;
   };
 };
