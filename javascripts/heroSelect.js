@@ -37,7 +37,8 @@ $("section#weapon-select").click(function(){
 $("div#battle-start").click(function(){
 	console.log("before stats", theHero);
 	console.log("before bad", theVillian);
-	statCompile();
+	theHero = statCompile(theHero);
+	theVillian = statCompile(theVillian);
 	console.log("after stats", theHero);
 	console.log("after bad", theVillian);
 });
