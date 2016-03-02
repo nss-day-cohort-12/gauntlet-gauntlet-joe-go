@@ -1,7 +1,7 @@
 "use strict";
 
 function addWeapon(theClass, theHero) {
-	console.log("class", theClass.id);
+	// console.log("class", theClass.id);
 	switch (theClass.id){
 		case "dagger":
 			theHero.weapon = new Dagger();

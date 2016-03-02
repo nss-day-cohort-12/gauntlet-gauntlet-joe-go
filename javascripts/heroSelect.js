@@ -2,6 +2,8 @@
 
 
 let theHero = new Gauntlet.Combatants.Human();
+let theVillian = new Gauntlet.Combatants.Orc();
+theVillian.generateClass();
 // when 'Select a Class' is clicked 
 // create a new 'Hero' object with the Name from the Text input field
 // this new object will be the user character
@@ -23,48 +25,32 @@ $("div.class-contain").click(function(){
 });
 
 
-// Which class was clicked?
-function addClass (theClass) {
-	console.log("class", theClass.id);
-	switch (theClass.id){
-		case "warrior":
-			theHero.class = new Gauntlet.GuildHall.Warrior();
-			break;
-		case "valkyrie":
-			theHero.class = new Gauntlet.GuildHall.Valkyrie();
-			break;
-		case "berserker":
-			theHero.class = new Gauntlet.GuildHall.Berserker();
-			break;
-		case "monk":
-			theHero.class = new Gauntlet.GuildHall.Monk();
-			break;
-		case "shaman":
-			theHero.class = new Gauntlet.GuildHall.Shaman();
-			break;
-		case "wizard":
-			theHero.class = new Gauntlet.GuildHall.Wizard();
-			break;
-		case "conjurer":
-			theHero.class = new Gauntlet.GuildHall.Conjurer();
-			break;
-		case "sorcerer":
-			theHero.class = new Gauntlet.GuildHall.Sorcerer();
-			break;
-		default:
-			break;						
-	};
-
-	console.log("test", theHero);
-};
-
-
-	// weapon select
-
+// weapon select
 
 $("section#weapon-select").click(function(){
 	addWeapon(event.target.closest(".card__button"), theHero);
 });
+
+
+// final stat compile
+
+$("div#battle-start").click(function(){
+	console.log("before stats", theHero);
+	console.log("before bad", theVillian);
+	statCompile();
+	console.log("after stats", theHero);
+	console.log("after bad", theVillian);
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
