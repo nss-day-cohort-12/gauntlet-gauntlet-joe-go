@@ -11,9 +11,7 @@ Gauntlet.SpellBook = {};
 Gauntlet.SpellBook.Spell = function() {
   this.name = "";
   this.damage = 0;
-
-  this.damageTypes = ["lightning", "fire", "water", "earth", "mysticism"];
-  this.type = "";
+  this.damageType = "";
 
   this.toString = function() {
     return this.name + " of " + this.type + " for " + this.damage + " damage!";
@@ -21,13 +19,26 @@ Gauntlet.SpellBook.Spell = function() {
 };
 
 /*
-  An elemental sphere that can be cast by a magical class
+  spells cast by magical classes
  */
-Gauntlet.SpellBook.Sphere = function() {
-  this.name = "sphere";
-  this.damage = Math.floor(Math.random() * 10 + 10);
 
-  var random = Math.round(Math.random() * (this.damageTypes.length - 1));
-  this.type = this.damageTypes[random];
+Gauntlet.SpellBook.Fireball = function() {
+  this.name = "fireball";
+  this.damage = 10;
+  this.damageType = "Fire";
 };
-Gauntlet.SpellBook.Sphere.prototype = new Gauntlet.SpellBook.Spell();
+Gauntlet.SpellBook.Fireball.prototype = new Gauntlet.SpellBook.Spell();
+
+Gauntlet.SpellBook.LightningBolt = function() {
+  this.name = "lightningbolt";
+  this.damage = 10;
+  this.damageType = "Lightning";
+};
+Gauntlet.SpellBook.LightningBolt.prototype = new Gauntlet.SpellBook.Spell();
+
+Gauntlet.SpellBook.AcidSplash = function() {
+  this.name = "acidsplash";
+  this.damage = 10;
+  this.damageType = "Poison";
+};
+Gauntlet.SpellBook.AcidSplash.prototype = new Gauntlet.SpellBook.Spell();
