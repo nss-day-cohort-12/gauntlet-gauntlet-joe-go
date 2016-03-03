@@ -9,6 +9,7 @@ Gauntlet.GuildHall = {};
  */
 Gauntlet.GuildHall.PlayerClass = function() {
   this.name = "Beggar";
+  this.archetype = "";
   this.healthBonus = 0;
   this.strengthBonus = 0;
   this.intelligenceBonus = 0;
@@ -30,6 +31,7 @@ Gauntlet.GuildHall.PlayerClass = function() {
 Gauntlet.GuildHall.Fighter = function() {
   this.healthBonus = 20;
   this.strengthBonus = 10;
+  this.archetype = "fighter";
 
 };
 Gauntlet.GuildHall.Fighter.prototype = new Gauntlet.GuildHall.PlayerClass();
@@ -80,6 +82,7 @@ Gauntlet.GuildHall.Mage = function() {
   this.healthBonus = this.healthBonus - 10;
   this.strengthBonus = this.strengthBonus - 20;
   this.intelligenceBonus = this.intelligenceBonus + 20;
+  this.archetype = "mage";
 };
 Gauntlet.GuildHall.Mage.prototype = new Gauntlet.GuildHall.PlayerClass();
 
@@ -132,6 +135,7 @@ Gauntlet.GuildHall.Stealth = function() {
   this.strengthBonus = this.strengthBonus - 10;
   this.intelligenceBonus = this.intelligenceBonus + 10;
   this.dexterityBonus = this.dexterityBonus + 15;
+  this.archetype = "stealth";
 };
 Gauntlet.GuildHall.Stealth.prototype = new Gauntlet.GuildHall.PlayerClass();
 
