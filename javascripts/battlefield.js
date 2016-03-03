@@ -14,7 +14,7 @@ function outputDOM() {
 };
 
 function actionToDOM (heroDmg, villainDmg) {
-    $('.actionOutput').append(`<p style="color: blue;"><span>${theHero.playerName} attacks ${theVillain.playerName} with the ${theHero.weapon.toString()} for ${villainDmg} damage.</span></p><br><p style="color: red;"><span>${theVillain.playerName} attacks ${theHero.playerName} with the ${theVillain.weapon.toString()} for ${heroDmg} damage.</span></p><br>`);
+    $('.actionOutput').append(`<p style="color: blue;"><span>${theHero.playerName} attacks ${theVillain.playerName} with the ${theHero.weapon.toString()} for ${heroDmg} damage.</span></p><br><p style="color: red;"><span>${theVillain.playerName} attacks ${theHero.playerName} with the ${theVillain.weapon.toString()} for ${villainDmg} damage.</span></p><br>`);
 };
 
 $("div#attack-button").click(function(){
