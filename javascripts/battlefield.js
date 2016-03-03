@@ -18,12 +18,21 @@ $("div#attack-button").click(function(){
     theHero.health = (theHero.health - calcDamage(theVillian));
 
     if (theVillian.health <= 0) {
-        alert("YOU HAVE WON THE BATTLE!")
+        alert("YOU HAVE WON THE BATTLE!");
+        $('.anchorAttack').addClass('disabled');
+        $('#attack-button').hide();
+        $('#startOverBtn').show();
     } else if (theHero.health <= 0) {
         alert("YOU ARE DEAD!")
+        $('.anchorAttack').addClass('disabled');
+        $('#attack-button').hide();
+        $('#startOverBtn').show();
     };
-
     outputDOM();
+});
+
+$("#startOverBtn").click(function(e) {
+    location.reload();
 });
 
 

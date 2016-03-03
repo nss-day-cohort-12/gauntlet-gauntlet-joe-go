@@ -105,9 +105,18 @@ body {
 }
 
 /*Player and Enemy Stat headings on Battlefield Page*/
-.fighterHeading {
+#heroHeading {
+  font-size: 2em;
+  color: blue;
+}
+
+#enemyHeading {
   font-size: 2em;
   color: red;
+}
+
+.image img {
+  height: 215px;
 }
 
 
