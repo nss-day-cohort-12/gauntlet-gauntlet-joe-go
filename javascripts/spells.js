@@ -24,21 +24,21 @@ Gauntlet.SpellBook.Spell = function() {
 
 Gauntlet.SpellBook.Fireball = function() {
   this.name = "fireball";
-  this.damage = 10;
+  this.damage = 20;
   this.damageType = "Fire";
 };
 Gauntlet.SpellBook.Fireball.prototype = new Gauntlet.SpellBook.Spell();
 
 Gauntlet.SpellBook.LightningBolt = function() {
   this.name = "lightningbolt";
-  this.damage = 10;
+  this.damage = 20;
   this.damageType = "Lightning";
 };
 Gauntlet.SpellBook.LightningBolt.prototype = new Gauntlet.SpellBook.Spell();
 
 Gauntlet.SpellBook.AcidSplash = function() {
   this.name = "acidsplash";
-  this.damage = 10;
+  this.damage = 20;
   this.damageType = "Poison";
 };
 Gauntlet.SpellBook.AcidSplash.prototype = new Gauntlet.SpellBook.Spell();

@@ -17,10 +17,10 @@ $("div#attack-button").click(function(){
     theVillian.health = (theVillian.health - calcDamage(theHero));
     theHero.health = (theHero.health - calcDamage(theVillian));
 
-    if (theHero.health <= 0) {
-        alert("YOU ARE DEAD!")
-    } else if (theVillian.health <= 0) {
+    if (theVillian.health <= 0) {
         alert("YOU HAVE WON THE BATTLE!")
+    } else if (theHero.health <= 0) {
+        alert("YOU ARE DEAD!")
     };
 
     outputDOM();
