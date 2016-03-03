@@ -20,6 +20,7 @@ Gauntlet.Combatants.Player = function(name) {
   this.skinColors = [this.skinColor];
   this.strength = 90;
   this.intelligence = 90;
+  this.dexterity = 90;
 
   this.toString = function() {
     var output = [this.playerName,
