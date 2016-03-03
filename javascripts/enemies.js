@@ -12,7 +12,6 @@ Gauntlet.Combatants.Orc = function() {
 
     // Composes the corresponding player class into the player object
     this.class = new Gauntlet.GuildHall[randomClass]();
-    console.log("this class", this.class);
     return this.class;
   };
 };
