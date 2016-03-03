@@ -12,7 +12,7 @@ function calcDamage(combatant) {
 			statBonus = (combatant.strength * .01);
 			damage = (combatant.weapon.damage + (combatant.weapon.damage * statBonus));
 			if (critChance >= 18){
-				console.log("CRITICAL HIT");
+				alert(`${combatant.playerName} HAS CRITICALLY HIT`);
 				damage = (damage * 1.5);
 			}
 			break;
@@ -21,7 +21,7 @@ function calcDamage(combatant) {
 			statBonus = (combatant.intelligence * .01);
 			damage = (combatant.weapon.damage + (combatant.weapon.damage * statBonus));
 			if (critChance === 20){
-				console.log("CRITICAL HIT");
+				alert(`${combatant.playerName} HAS CRITICALLY HIT`);
 				damage = (damage * 2);
 			}
 			break;
@@ -30,7 +30,7 @@ function calcDamage(combatant) {
 			statBonus = (combatant.dexterity * .01);
 			damage = (combatant.weapon.damage + (combatant.weapon.damage * statBonus));
 			if (critChance >= 13){
-				console.log("CRITICAL HIT");
+				alert(`${combatant.playerName} HAS CRITICALLY HIT`);
 				damage = (damage * 3);
 			}
 			break;
