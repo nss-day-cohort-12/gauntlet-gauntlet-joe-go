@@ -22,7 +22,8 @@ function calcDamage(combatant) {
 			damage = (combatant.weapon.damage + (combatant.weapon.damage * statBonus));
 			if (critChance === 20){
 				alert(`${combatant.playerName} HAS CRITICALLY HIT`);
-				damage = (damage * 2);
+				damage = (damage * 1.3);
+
 			}
 			break;
 		case "stealth":
@@ -31,7 +32,7 @@ function calcDamage(combatant) {
 			damage = (combatant.weapon.damage + (combatant.weapon.damage * statBonus));
 			if (critChance >= 13){
 				alert(`${combatant.playerName} HAS CRITICALLY HIT`);
-				damage = (damage * 3);
+				damage = (damage * 2);
 			}
 			break;
 		default:

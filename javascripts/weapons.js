@@ -17,7 +17,7 @@ Dagger.prototype = new Weapon();
 
 var BroadSword = function() {
   this.name = "broad sword";
-  this.damage = 14;
+  this.damage = 15;
   this.hands = 2;
 };
 BroadSword.prototype = new Weapon();
