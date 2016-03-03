@@ -6,5 +6,7 @@ function statCompile (combatant) {
 	combatant.intelligence = (combatant.intelligence + combatant.class.intelligenceBonus);
 	combatant.dexterity = (combatant.dexterity + combatant.class.dexterityBonus);
 	// console.log("Here he is, folks", theHero);
+	// add dex later
+	console.log("Here he is, folks", theHero);
 	return combatant;
 };
