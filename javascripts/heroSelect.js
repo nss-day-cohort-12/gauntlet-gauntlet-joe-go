@@ -2,9 +2,9 @@
 
 
 let theHero = new Gauntlet.Combatants.Human();
-let theVillian = new Gauntlet.Combatants.Orc();
-theVillian.generateClass();
-theVillian.setWeapon(new BroadSword());
+let theVillain = new Gauntlet.Combatants.Orc();
+theVillain.generateClass();
+theVillain.setWeapon(new BroadSword());
 // when 'Select a Class' is clicked 
 // create a new 'Hero' object with the Name from the Text input field
 // this new object will be the user character
@@ -36,7 +36,7 @@ $("section#weapon-select").click(function(){
 
 $("div#battle-start").click(function(){
 	theHero = statCompile(theHero);
-	theVillian = statCompile(theVillian);
+	theVillain = statCompile(theVillain);
 	outputDOM();
 });
 

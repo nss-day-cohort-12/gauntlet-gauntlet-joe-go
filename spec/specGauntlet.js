@@ -8,20 +8,16 @@ describe("The specs for this app", function() {
 	  expect(statCompile).toBeDefined();
 	});
 
-	// it("should have the statCompile function return the combatant with the included attributes needed for battle.", function () {
-	//   expect(statCompile()).toBe();
-	// });
+  it("should have a function that calculates the damage value to inflict when attack button is clicked.", function() {
+    expect(calcDamage).toBeDefined();
+  });
 
-  // it("should have a function that calculates the damage value to inflict when attack button is clicked.", function() {
-  //   expect(calcDamage).toBeDefined();
-  // });
-
-  // it("should return a number value to subtract from enemy's health", function () {
-  // 	var newHero = new Gauntlet.Combatants.Human();
-  // 	newHero.class = new Gauntlet.Combatant.Warrior();
-  // 	newHero.weapon = new BroadSword();
-  // 	newHero = statCompile(newHero);
-  //   expect(calcDamage(newHero)).toBe();
-  // });
+  it("should return a number value to subtract from enemy's health", function () {
+  	var newHero = new Gauntlet.Combatants.Human();
+  	newHero.class = new Gauntlet.Combatant.Warrior();
+  	newHero.weapon = new BroadSword();
+  	newHero = statCompile(newHero);
+    expect(calcDamage(newHero)).toBe();
+  });
 
 });
