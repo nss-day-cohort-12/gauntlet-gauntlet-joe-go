@@ -61,6 +61,8 @@ $(document).ready(function() {
     var nextCard = $(this).attr("next");
     $(".card").hide();
     $("." + nextCard).show();
+    $('#startOverBtn').hide();
+    $('#attack-button').show();
     console.log("theHero", theHero);
   });
   // When the 'weapon select' button is clicked, show weapons if user is NOT magical, and show Spells if theHero IS magical.

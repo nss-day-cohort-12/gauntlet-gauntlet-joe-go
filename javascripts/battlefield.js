@@ -19,11 +19,20 @@ $("div#attack-button").click(function(){
 
     if (theHero.health <= 0) {
         alert("YOU ARE DEAD!")
+        $('.anchorAttack').addClass('disabled');
+        $('#attack-button').hide();
+        $('#startOverBtn').show();
     } else if (theVillian.health <= 0) {
         alert("YOU HAVE WON THE BATTLE!")
+        $('.anchorAttack').addClass('disabled');
+        $('#attack-button').hide();
+        $('#startOverBtn').show();
     };
-
     outputDOM();
+});
+
+$("#startOverBtn").click(function(e) {
+    location.reload();
 });
 
 
