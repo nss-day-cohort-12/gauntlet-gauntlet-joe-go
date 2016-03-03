@@ -27,6 +27,18 @@ function addClass (theClass) {
 		case "sorcerer":
 			theHero.class = new Gauntlet.GuildHall.Sorcerer();
 			break;
+		case "ninja":
+			theHero.class = new Gauntlet.GuildHall.Ninja();
+			break;
+		case "thief":
+			theHero.class = new Gauntlet.GuildHall.Thief();
+			break;
+		case "assassin":
+			theHero.class = new Gauntlet.GuildHall.Assassin();
+			break;
+		case "rogue":
+			theHero.class = new Gauntlet.GuildHall.Rogue();
+			break;
 		default:
 			break;						
 	};

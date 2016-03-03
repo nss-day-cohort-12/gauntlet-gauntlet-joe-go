@@ -6,7 +6,8 @@
 
 var warrior = new Gauntlet.Combatants.Human();
 warrior.setWeapon(new WarAxe());
-warrior.generateClass();  // This will be used for "Surprise me" option
+warrior.generateClass();  
+// This will be used for "Surprise me" option
 console.log(warrior.toString());
 
 var orc = new Gauntlet.Combatants.Orc();
@@ -58,8 +59,9 @@ $(document).ready(function() {
     var nextCard = $(this).attr("next");
     $(".card").hide();
     $("." + nextCard).show();
+    console.log("theHero", theHero);
   });
-// When the 'weapon select' button is clicked, show weapons if user is NOT magical, and show Spells if theHero IS magical.
+  // When the 'weapon select' button is clicked, show weapons if user is NOT magical, and show Spells if theHero IS magical.
   $('.selectWpnBtn').click(function () {
     if (theHero.class.magical === true) {
       $('.weapon_button').hide();
@@ -71,6 +73,8 @@ $(document).ready(function() {
     console.log("theHero", theHero);
   });
 });
+
+
 
 
 
