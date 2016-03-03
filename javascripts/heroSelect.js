@@ -16,7 +16,6 @@ $("a#select-class").click(function() {
 // capture the Player's name
 function nameHero() {
 	theHero.playerName = $("input#player-name").val();
-	console.log("name", theHero);
 	return theHero;
 };
 
@@ -36,12 +35,8 @@ $("section#weapon-select").click(function(){
 // final stat compile
 
 $("div#battle-start").click(function(){
-	console.log("before stats", theHero);
-	console.log("before bad", theVillian);
 	theHero = statCompile(theHero);
 	theVillian = statCompile(theVillian);
-	console.log("after stats", theHero);
-	console.log("after bad", theVillian);
 	outputDOM();
 });
 

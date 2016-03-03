@@ -1,7 +1,6 @@
 "use strict";
 
 function addClass (theClass) {
-	console.log("class", theClass.id);
 	switch (theClass.id){
 		case "warrior":
 			theHero.class = new Gauntlet.GuildHall.Warrior();
@@ -42,6 +41,4 @@ function addClass (theClass) {
 		default:
 			break;						
 	};
-
-	console.log("test", theHero);
 };

@@ -17,6 +17,7 @@ $("div#attack-button").click(function(){
     theVillian.health = (theVillian.health - calcDamage(theHero));
     theHero.health = (theHero.health - calcDamage(theVillian));
 
+<<<<<<< HEAD
     if (theHero.health <= 0) {
         alert("YOU ARE DEAD!")
         $('.anchorAttack').addClass('disabled');
@@ -27,6 +28,12 @@ $("div#attack-button").click(function(){
         $('.anchorAttack').addClass('disabled');
         $('#attack-button').hide();
         $('#startOverBtn').show();
+=======
+    if (theVillian.health <= 0) {
+        alert("YOU HAVE WON THE BATTLE!")
+    } else if (theHero.health <= 0) {
+        alert("YOU ARE DEAD!")
+>>>>>>> 1da6051cda0b73705363105d21114a33b36d89ee
     };
     outputDOM();
 });
