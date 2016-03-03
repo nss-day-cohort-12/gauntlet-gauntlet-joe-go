@@ -226,27 +226,35 @@
     </section>
 
     <section id="battleground" class="card card--battleground">
-      <div class = "col-sm-4">
-        <h3>Player</h3>
-        <h2>Stats</h2>
-        <p class="health"></p>
-        <p class="strength"></p>
-        <p class="intelligence"></p>
-        <p class="dexterity"></p>
+<<<<<<< HEAD
+      <div class="col-md-12 card__prompt">
+        <div class = "col-md-6">
+          <div class="well">
+            <p class="fighterHeading">Player 1</p>
+            <p class="health"></p>
+            <p class="strength"></p>
+            <p class="intelligence"></p>
+            <p class="dexterity"></p>
+          </div>
+        </div>
+        <div class = "col-md-6">
+          <div class="well">
+            <p class="fighterHeading">Orc</p>
+            <p class="enemyHP"></p>
+            <p class="enemyStr"></p>
+            <p class="enemyInt"></p>
+            <p class="enemyDex"></p>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <button class="col-sm-1" id="attack-button">ATTACK!</button>
-      </div>
-      <div class = "col-sm-4">
-        <h3>Enemy</h3>
-        <h2>Stats</h2>
-        <p class="enemyHP"></p>
-        <p class="enemyStr"></p>
-        <p class="enemyInt"></p>
-        <p class="enemyDex"></p>
+      <div class="card__button" id="attackBtn">
+        <a class="btn btn--big btn--orange">>
+          <span class="btn__prompt"></span>
+          <span class="btn__text">ATTACK!</span>
+        </a>
       </div>
     </section>
+
   </article>
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
