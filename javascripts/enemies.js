@@ -1,6 +1,7 @@
 Gauntlet.Combatants.Orc = function() {
   this.health = this.health + 20;
   this.species = "Orc";
+  this.playerName = "Rat-Bag";
   this.allowedClasses = ["Warrior", "Berserker", "Monk"];
 
   this.generateClass = function() {   
