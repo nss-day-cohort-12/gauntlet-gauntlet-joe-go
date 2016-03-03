@@ -106,17 +106,22 @@ body {
 
 /*Player and Enemy Stat headings on Battlefield Page*/
 #heroHeading {
-  font-size: 2em;
+  font-size: 1.5em;
   color: blue;
 }
 
 #enemyHeading {
-  font-size: 2em;
+  font-size: 1.5em;
   color: red;
 }
 
 .image img {
   height: 215px;
+}
+
+/*DOM output that shows the actions of the battle.*/
+.actionOutput {
+  font-size: 20px;
 }
 
 
