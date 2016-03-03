@@ -4,7 +4,7 @@
 let theHero = new Gauntlet.Combatants.Human();
 let theVillian = new Gauntlet.Combatants.Orc();
 theVillian.generateClass();
-theVillian.setWeapon(new Broadsword());
+theVillian.setWeapon(new BroadSword());
 // when 'Select a Class' is clicked 
 // create a new 'Hero' object with the Name from the Text input field
 // this new object will be the user character
