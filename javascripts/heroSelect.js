@@ -41,6 +41,7 @@ $("div#battle-start").click(function(){
 	theVillian = statCompile(theVillian);
 	console.log("after stats", theHero);
 	console.log("after bad", theVillian);
+	outputDOM();
 });
 
 
